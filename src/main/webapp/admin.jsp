@@ -16,7 +16,11 @@
     </head>
     <body>
 
+<<<<<<< HEAD
         <h3> ADMIN333555 </h3>
+=======
+
+>>>>>>> parent of b9750d3... Commit1
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="<c:url value = "/home"/>">Portal vesti</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
