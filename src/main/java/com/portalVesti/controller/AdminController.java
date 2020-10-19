@@ -1,7 +1,7 @@
 package com.portalVesti.controller;
 
-import com.portalVesti.adminServiceImpl.AdminServiceImpl;
-import com.portalVesti.adminServis.AdminService;
+import com.portalVesti.serviceImpl.AdminServiceImpl;
+import com.portalVesti.service.AdminService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -45,6 +45,6 @@ public class AdminController {
     @PostMapping(path = "/login")
     public String ulogovaniAdmin() {
        
-        return "login";
+        return "/WEB-INF/pages/login";
     }
 }

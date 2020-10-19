@@ -35,4 +35,67 @@
         <script type="text/javascript" src="${pageContext.request.contextPath}/webjars/jquery/3.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="${pageContext.request.contextPath}/webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </body>
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Portal vesti</h5>
+                    <p>Uz nas saznajte najnovije detalje iz sveta sporta, kulture, zabave i hronike.</p>
+                    <p>Budite obavesteni o svim mogucim dogadjajima, jer mi smo tu da saznate istinu iz prve ruke.</p>
+
+                </div>
+
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                    <!-- Contact details -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Adresa</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <i class="fas fa-home mr-3"></i> Mije Kovacevica 7, Beograd</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i> portalvesti011@gmail.com</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i> +381 64 55 11 777</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-print mr-3"></i> 011 39 66 777</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+               
+
+                <!-- Copyright -->
+                <div class ="container">
+                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <a href="#"> KM</a>
+                </div>
+                <!-- Copyright -->
+                </div>
+                </footer>
 </html>

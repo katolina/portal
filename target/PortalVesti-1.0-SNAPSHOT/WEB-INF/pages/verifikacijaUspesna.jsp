@@ -1,0 +1,165 @@
+<%-- 
+    Document   : registracijaUspesna.jsp
+    Created on : 16-Oct-2020, 10:26:51
+    Author     : Kata
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel='stylesheet' href='${pageContext.request.contextPath}/webjars/bootstrap/4.4.1/css/bootstrap.min.css'>
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="<c:url value = "/home"/>">Portal vesti</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="<c:url value = "/home"/>">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="<c:url value = "/kultura"/>">Kultura</a>
+                    <a class="nav-item nav-link" href="<c:url value = "/hronika"/>">Hronika</a>
+                    <a class="nav-item nav-link" href="<c:url value = "/zabava"/>">Zabava</a>
+                    <a class="nav-item nav-link" href="<c:url value = "/sport"/>">Sport</a>
+                    <a class="nav-item nav-link" href="<c:url value = "/registracija"/>">Prijavi se</a>
+
+                </div>
+            </div>
+        </nav>
+        <div class ="container">
+            <br>
+            <h3> Napravi novi nalog </h3>
+            <h5> Verifikacija uspesna</h5>
+            <form action="${pageContext.request.contextPath}/MailDispatcherServlet" method = "post">
+
+                <br>
+
+                <div class="form-group">
+                    <br>
+                    <label for="exampleInputEmail">Email</label>
+                    
+                    <input type="email" name ="email" class="form-control" id="exampleInputUsername" aria-describedby="EmailHelp">
+
+                </div>
+                <div class="form-group">
+                    <br>
+                    <label for="exampleInputSifra">Sifra</label>
+                    <input type="sifra" name ="sifra" class="form-control" id="exampleInputSifra" aria-describedby="SifraHelp">
+
+                </div>
+                <div class="form-group">
+                    <br>
+                    <label for="exampleInputIme">Ime:</label>
+                    <input type="ime" name ="ime" class="form-control" id="exampleInputIme" aria-describedby="ImeHelp">
+
+                </div>
+                <div class="form-group">
+                    <br>
+                    <label for="exampleInputPrezime">Prezime</label>
+                    <input type="prezime" name ="prezime" class="form-control" id="exampleInputPrezime" aria-describedby="PrezimeHelp">
+
+                </div>
+
+                <label for="kategorije">Kategorije koje zelite da pratite:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Hronika
+                    </label><br>
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Sport
+                    </label><br>
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Kultura
+                    </label><br>
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Zabava
+                    </label><br>
+
+                </div>
+                <button type="submit" class="btn btn-primary">Prijavi se</button>
+
+        </div>
+
+
+
+    </div>
+</form>
+<script type="text/javascript" src="${pageContext.request.contextPath}/webjars/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Portal vesti</h5>
+                    <p>Uz nas saznajte najnovije detalje iz sveta sporta, kulture, zabave i hronike.</p>
+                    <p>Budite obavesteni o svim mogucim dogadjajima, jer mi smo tu da saznate istinu iz prve ruke.</p>
+
+                </div>
+
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                    <!-- Contact details -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Adresa</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <i class="fas fa-home mr-3"></i> Mije Kovacevica 7, Beograd</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i> portalvesti011@gmail.com</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i> +381 64 55 11 777</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-print mr-3"></i> 011 39 66 777</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+
+
+                <!-- Copyright -->
+                <div class ="container">
+                    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                        <a href="#"> KM</a>
+                    </div>
+                    <!-- Copyright -->
+                </div>
+                </footer>
+
+                </html>

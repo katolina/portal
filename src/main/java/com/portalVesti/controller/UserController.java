@@ -35,4 +35,9 @@ public class UserController {
     public String noviNalog(){
         return "noviNalog";
     }
+    
+    @GetMapping(path = "/verifikacijaUspesna")
+    public String verifikacija(){
+        return "/WEB-INF/pages/verifikacijaUspesna";
+    }
 }

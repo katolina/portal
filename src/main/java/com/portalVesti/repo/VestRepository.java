@@ -5,6 +5,7 @@
  */
 package com.portalVesti.repo;
 
+import com.portalVesti.model.KategorijaEntity;
 import com.portalVesti.model.VestEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -18,4 +19,5 @@ import org.springframework.stereotype.Repository;
 public interface VestRepository extends JpaRepository<VestEntity, Integer>{
     
     VestEntity save(VestEntity vest);
+    VestEntity findByKategorija(KategorijaEntity kategorija);
 }
